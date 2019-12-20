@@ -81,7 +81,11 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(ingredient => {
+    ingredient = ingredient.slice(ingredient.indexOf(' ') + 1);
+    const item = ingredient.slice(ingredient.indexOf(' ') + 1);
+    result.push(item);
+  });
   return result;
 };
 
@@ -95,8 +99,11 @@ You may also use other string or array methods.
 
 const splitFoods = (recipe) => {
   let result = [];
-  // Solution code here...
-  return result;
+  recipe.ingredients.forEach(ingredient => {
+    let array = ingredient.split(' ').slice(2).join(' ');
+    result.push(array);
+  });
+      return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
