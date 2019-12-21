@@ -43,8 +43,11 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
-};
+  array=[];
+  if (/\b[A-J].*?\b/gm) {
+      array.push(/\b[A-Z].*?\b/gm);
+      return array;   
+     }};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -59,7 +62,12 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+  if(input==/\boct\b|\bOct\b|\bOctober\b|\boctober\b/g ){
+    return true;
+
+  }else{
+    return false;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
