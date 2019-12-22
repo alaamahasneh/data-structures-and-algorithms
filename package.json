@@ -12,5 +12,14 @@
   "license": "MIT",
   "dependencies": {
     "jest": "^24.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaamahasneh/data-structures-and-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alaamahasneh/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/alaamahasneh/data-structures-and-algorithms#readme"
 }
