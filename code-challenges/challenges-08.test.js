@@ -9,7 +9,8 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+let powerdOddNumber = arr.filter(number=> number%2 !=0);
+return powerdOddNumber
 };
 
 /* ------------------------------------------------------------------------------------------------
