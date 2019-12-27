@@ -62,12 +62,11 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  if(input==/\boct\b|\bOct\b|\bOctober\b|\boctober\b/g ){
-    return true;
+  let expre = /\boct\b|\bOct\b|\bOctober\b|\boctober\b/g;  
 
-  }else{
-    return false;
-  }
+  const output = expre.test(input);
+
+  return(output);
 };
 
 /* ------------------------------------------------------------------------------------------------
