@@ -77,10 +77,10 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   let array =[];
-  let output = arr.map(num =>{
-if (num%2 ==0) {
+   arr.map(num =>{
+if (num % 2 ===0) {
 array.push('even');
-}else if (element % 2 !== 0 && typeof(element) != 'string'){
+}else if (num % 2 !== 0 && typeof(num) != 'string'){
   array.push('odd');
 }
   
@@ -133,8 +133,8 @@ const snorlaxAbilities = {
 
 const extractAbilities = (arr) => {
   let newArray=[];
-  let nameOfArray = arr.map(str =>{
-    newArray.push(str.ability.name);
+   arr.map(str =>{
+     newArray.push(str.ability.name);
 
   })
   return newArray;
@@ -184,7 +184,15 @@ const snorlaxStats = {
 };
 
 const extractStats = (arr) => {
-  // Solution code here...
+  let outPut=arr.map(value=>{
+    let newArr ={};
+    let total = (value.effort + value.baseStat);
+    newArr.name= value.stat.name;
+    newArr.total= total;
+    return newArr;
+
+  })
+  return outPut;
 };
 
 /* ------------------------------------------------------------------------------------------------
