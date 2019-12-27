@@ -81,10 +81,12 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  let space =[];
-  let str2=str.match(/\b[a-z]+ |\b[0-9]+ /gi);
- str2.push(space);
-  return space;
+  let expression = /\b[a-z]+ |\b[0-9]+ /gi;  
+  
+  const result = str.match(expression);
+  
+  console.log(result);
+  return(result);
 
 
 };
