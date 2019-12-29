@@ -13,10 +13,10 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
     let result=[];
-    let numCount=input.filter(item=>item.includes(target));
-    numCount.forEach(item=>{
-      for(let i in item){
-        if (item[i]===target) result.push(item[i]);
+    let numCount=input.filter(element=>element.includes(target));
+    numCount.forEach(element=>{
+      for(let i in element){
+        if (element[i]===target) result.push(element[i]);
       }
     });
     return result.length; 
@@ -33,7 +33,13 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+    var total=0;
+    input.forEach(item=>{
+      for(let i in item){
+        total+=item[i];
+      }
+    });
+    return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
