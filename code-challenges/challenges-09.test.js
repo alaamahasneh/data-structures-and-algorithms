@@ -150,7 +150,7 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-    // Solution code here...
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
