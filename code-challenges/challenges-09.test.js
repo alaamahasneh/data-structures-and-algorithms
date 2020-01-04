@@ -78,7 +78,7 @@ const returnNames = (arr) => {
 
         character.push(value.name);
         return character;
-      }, [])
+    }, [])
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -93,10 +93,10 @@ const reversedString = (str) => {
     let arraystr = str.split('');
 
     let reverse = arraystr.reduce((acc, value) => {
-      acc.unshift(value);
-      return acc;
-    },[]);
-  
+        acc.unshift(value);
+        return acc;
+    }, []);
+
     return reverse.join('')
 };
 
@@ -150,7 +150,17 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-    
+
+    let count = 0;
+    count = arr.reduce((acc, cur) => {
+        if (cur.children) {
+            acc = acc += cur.children.length;
+        }
+        return acc;
+    }, 0)
+    return count;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
