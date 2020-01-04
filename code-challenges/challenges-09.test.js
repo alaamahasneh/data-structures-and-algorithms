@@ -249,10 +249,7 @@ const snorlaxData = {
 };
 
 const extractStat = (statName, arr) => {
-    const primeCount = arr.reduce((acc, cur) => {
-        if (isPrime(cur)) {
-            acc++
-            return acc;
+   
 };
 
 /* ------------------------------------------------------------------------------------------------
